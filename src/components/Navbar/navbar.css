@@ -2,7 +2,7 @@
     z-index: 90;
     background-color: transparent;
     padding: 1.6rem 1rem;
-    transition: all .5s ease;
+    transition: all .3s ease;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -69,7 +69,7 @@
 
 .header .container .menuPrincipal .ulMenu {
     list-style: none;
-    padding: .5rem .5rem 0 .5rem;
+    padding: 1rem;
     margin-bottom: 0;
     background-color: white;
 }

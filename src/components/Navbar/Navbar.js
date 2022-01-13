@@ -11,7 +11,7 @@ function CustomToggle({ eventKey }) {
 
 document.addEventListener('scroll', () => {
   const header = document.querySelector('.header');
-  if (window.scrollY >= 20) {
+  if (window.scrollY >= 15) {
     header.classList.add('headerFijo');
   } else {
     header.classList.remove('headerFijo');

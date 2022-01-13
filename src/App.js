@@ -7,7 +7,7 @@ import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import UserPage from "./pages/UserPage";
 
-import Navbar from "./components/Navbar";
+import Hero from "./components/Hero/Hero";
 import Dashboard from "./pages/Dashboard";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,8 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function App() {
   return(
     <BrowserRouter>
-
-      <Navbar/>
+      <Hero/>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/services" element={<ServicesPage/>}/>

@@ -1,7 +1,7 @@
 export default function HomePage() {
-    return (
-        <div>
-            <h1>Home</h1>
-        </div>
-    )
+  return (
+    <main className="serviciosIndex" id="serviciosIndex">
+      <h3>Txto</h3>
+    </main>
+  )
 }
