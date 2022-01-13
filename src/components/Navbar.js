@@ -9,6 +9,15 @@ function CustomToggle({ eventKey }) {
   return (<div onClick={decoratedOnClick} className="line"></div>);
 }
 
+document.addEventListener('scroll', () => {
+  const header = document.querySelector('.header');
+  if (window.scrollY >= 20) {
+    header.classList.add('headerFijo');
+  } else {
+    header.classList.remove('headerFijo');
+  }
+});
+
 export default function Navbar() {
   return (
     <header className="header fixed-top">
