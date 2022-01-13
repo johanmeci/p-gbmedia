@@ -8,6 +8,8 @@ import NotFoundPage from "./pages/NotFoundPage";
 import UserPage from "./pages/UserPage";
 
 import Hero from "./components/Hero/Hero";
+import Footer from "./components/Footer/Footer";
+
 import Dashboard from "./pages/Dashboard";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -35,7 +37,7 @@ export default function App() {
 
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
-      
+      <Footer/>
     </BrowserRouter>
   )
 }
