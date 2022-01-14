@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 import './navbar.css';
 
 function CustomToggle({ eventKey }) {
-  const decoratedOnClick = useAccordionButton(eventKey);
+  const accordionOnClick = useAccordionButton(eventKey);
 
-  return (<div onClick={decoratedOnClick} className="line"></div>);
+  return (<div onClick={accordionOnClick} className="line"></div>);
 }
 
 document.addEventListener('scroll', () => {

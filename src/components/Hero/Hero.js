@@ -1,11 +1,32 @@
 import { Col, Container, Row } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
+
 import Navbar from "../Navbar/Navbar";
+import { txtHero } from "../../constants/constants";
 
 import './hero.css';
 
 export default function Hero() {
+
+  const { pathname } = useLocation();
+  const { title, subtitle, tag } = txtHero.filter(txt => txt.tag === pathname)[0] || {};
+  
+  let arrowSection;
+  
+  if (pathname === '/') {
+    arrowSection = 
+      <section className="flechaBajar">
+        <Container>
+          <Row>
+            <a href="servicios" className="flcBajar btn btnPrincipal">Ir a los servicios</a>
+            <a href="#serviciosIndex" className="flcBajar btn btnSecundario">Ver más contenido</a>
+          </Row>
+        </Container>
+      </section>;
+  }
+
   return (
-    <section className="bienvenidosPrincipal">
+    <section className={`bienvenidosPrincipal ${tag.replace('/', '')}`}>
       <Navbar/>
       <div className="divPrincipal">
         <section className="textoPrincipal">
@@ -13,21 +34,14 @@ export default function Hero() {
             <Row>
               <Col xs="11" sm="11" md="11" className="m-auto">
                 <article className="contenidoTexto">
-                  <h1>Servicios Web y Audiovisuales</h1>
-                  <h3>Somos un grupo empresarial joven y especializado en la creación y desarrollo de negocios online, obteniendo resultados que satisfacen sus necesidades.</h3>
+                  <h1>{title}</h1>
+                  <h3>{subtitle}</h3>
                 </article>
               </Col>
             </Row>
           </Container>
         </section>
-        <section className="flechaBajar">
-          <Container>
-            <Row>
-              <a href="servicios" className="flcBajar btn btnPrincipal">Ir a los servicios</a>
-              <a href="#serviciosIndex" className="flcBajar btn btnSecundario">Ver más contenido</a>
-            </Row>
-          </Container>
-        </section>
+        {arrowSection}
       </div>
       <div className="imgPrincipal2"></div>
     </section>

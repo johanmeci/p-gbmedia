@@ -25,13 +25,32 @@
 .serviciosIndex .contenedorServicios .servicio {
     cursor: pointer;
     border-radius: 5px;
-    padding: 2rem 1.8rem;
     margin: 1rem auto 1.5rem auto;
     background-color: #FFFFFF;
     box-shadow: 0 2px 6px 0 rgba(202, 202, 202, 0.5);
     transition: all 0.5s ease-in-out;
     position: relative;
     overflow: hidden;
+    border: none;
+}
+
+.serviciosIndex .contenedorServicios .servicio .accordion-button {
+    padding: 2rem 1.8rem;
+    margin-left: 3px;
+}
+
+.serviciosIndex .contenedorServicios .servicio .accordion-button:focus {
+    box-shadow: none;
+}
+
+.serviciosIndex .contenedorServicios .servicio .accordion-button::after {
+    display: none;
+}
+
+.serviciosIndex .contenedorServicios .servicio .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: initial;
+    box-shadow: none;
 }
 
 .serviciosIndex .contenedorServicios .servicio:after {
@@ -85,9 +104,12 @@
     font-size: 1.2rem;
 }
 
+.serviciosIndex .contenedorServicios .servicio .bodyServicio.accordion-body {
+    padding: .5rem 1.5rem 1.5rem 1.5rem;
+}
+
 .serviciosIndex .contenedorServicios .servicio .bodyServicio .textoServicio {
     margin-bottom: 0;
-    margin-top: 1rem;
     font-weight: 300;
 }
 

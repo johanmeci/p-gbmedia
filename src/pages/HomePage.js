@@ -1,5 +1,4 @@
 import { Accordion, Container, Row } from "react-bootstrap";
-
 import { itemsAbout } from "../constants/constants";
 
 import '../css/homePage.css';
@@ -15,9 +14,9 @@ export default function HomePage() {
             <Accordion className="contenedorServicios col-12 col-md-11 col-lg-12">
             {itemsAbout.map(({ title, category, description, image, id }) => (
 
-              <Accordion.Item eventKey={id} className="servicio" key={id}>
+              <Accordion.Item eventKey={id} key={id} className="servicio col-12 col-sm-11">
                 <Accordion.Header className="headerServicio">
-                  <img src={image} alt="icon {category}" className="iconServicio"/>
+                  <img src={image} alt="icon" className="iconServicio"/>
                   <div className="divHeader">
                     <h5 className="txtServicio">{category}</h5>
                     <h4 className="tituloServicio">{title}</h4>

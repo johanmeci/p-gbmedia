@@ -28,7 +28,9 @@ body .btn.btnSecundario {
     border: 2px solid #51a3de;
 }
 
-body .btn.btnSecundario:active, body .btn.btnSecundario:focus, body .btn.btnSecundario:hover {
+body .btn.btnSecundario:active, 
+body .btn.btnSecundario:focus, 
+body .btn.btnSecundario:hover {
     background: #51a3de;
     color: #FFFFFF;
 }
@@ -44,6 +46,22 @@ body .btn.btnInfo {
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.bienvenidosPrincipal.about {
+    background-color: #FFF59D;
+    padding-bottom: 3rem;
+    height: 70vh;
+    justify-content: center
+}
+
+.bienvenidosPrincipal.contact {
+    height: auto;
+}
+
+.bienvenidosPrincipal.contact .divPrincipal,
+.bienvenidosPrincipal.contact .imgPrincipal2 {
+    display: none;
 }
 
 .bienvenidosPrincipal .divPrincipal {
@@ -72,6 +90,7 @@ body .btn.btnInfo {
     text-align: center;
     font-size: 2.4rem;
     font-weight: 900;
+    text-transform: capitalize;
 }
 
 .bienvenidosPrincipal .textoPrincipal h3 {
@@ -95,6 +114,10 @@ body .btn.btnInfo {
     width: max-content;
 }
 
+.bienvenidosPrincipal.about .imgPrincipal2 {
+    display: none;
+}
+
 .bienvenidosPrincipal .imgPrincipal2 {
     position: absolute;
     top: 0;
@@ -111,4 +134,8 @@ body .btn.btnInfo {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.4)
+}
+
+.bienvenidosPrincipal.services .imgPrincipal2 {
+    background-image: url(/public/images/imgPrincipalServicios.jpg);
 }

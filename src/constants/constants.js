@@ -56,3 +56,26 @@ export const itemsAbout = [
 		id: 7
 	}
 ]
+
+export const txtHero = [
+  {
+    tag: '/',
+    title: 'Servicios Web y Audiovisuales',
+    subtitle: 'Somos un grupo empresarial joven y especializado en la creación y desarrollo de negocios online, obteniendo resultados que satisfacen sus necesidades.'
+  },
+  {
+    tag: '/services',
+    title: 'Servicios',
+    subtitle: 'GB Media Group pretende ser un proveedor estratégico de tecnología para sus clientes, convirtiéndose prácticamente en un socio de negocios en este aspecto, priorizando el uso de la brújula antes que el reloj.'
+  },
+  {
+    tag: '/about',
+    title: 'Este es GBMediaGroup',
+    subtitle: ''
+  },
+  {
+    tag: '/contact',
+    title: '',
+    subtitle: ''
+  }
+]
