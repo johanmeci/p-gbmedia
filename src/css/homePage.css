@@ -1,0 +1,101 @@
+.serviciosIndex {
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    background: #FFFFFF;
+}
+
+.serviciosIndex h3, .serviciosIndex h6 {
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.serviciosIndex h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.serviciosIndex h6 {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.serviciosIndex .contenedorServicios {
+    padding: 0;
+}
+
+.serviciosIndex .contenedorServicios .servicio {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2rem 1.8rem;
+    margin: 1rem auto 1.5rem auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 6px 0 rgba(202, 202, 202, 0.5);
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.serviciosIndex .contenedorServicios .servicio:after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.serviciosIndex .contenedorServicios .servicio:hover {
+    background-color: #f6f6f6;
+    -webkit-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+}
+
+.serviciosIndex .contenedorServicios .servicio:hover:after {
+    background-color: #005076;
+}
+
+.serviciosIndex .contenedorServicios .servicio .headerServicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.serviciosIndex .contenedorServicios .servicio .headerServicio .iconServicio {
+    width: 65px;
+    height: 65px;
+    padding: .8rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 14px rgba(202, 202, 202, 0.5);
+}
+
+.serviciosIndex .contenedorServicios .servicio .headerServicio .divHeader {
+    margin-left: 1rem;
+}
+
+.serviciosIndex .contenedorServicios .servicio .headerServicio .divHeader .txtServicio {
+    font-size: 1rem;
+    color: #808080;
+    text-transform: uppercase;
+}
+
+.serviciosIndex .contenedorServicios .servicio .headerServicio .divHeader .tituloServicio {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.serviciosIndex .contenedorServicios .servicio .bodyServicio .textoServicio {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+.serviciosIndex .contenedorServicios .servicio[aria-expanded=true] {
+    background-color: #f6f6f6;
+    box-shadow: 0 2px 6px 0 rgba(202, 202, 202, 0.5);
+}
+
+.serviciosIndex .contenedorServicios .servicio[aria-expanded=true]:after {
+    background-color: #005076;
+}
