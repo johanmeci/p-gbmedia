@@ -138,4 +138,5 @@ body .btn.btnInfo {
 
 .bienvenidosPrincipal.services .imgPrincipal2 {
     background-image: url(/public/images/imgPrincipalServicios.jpg);
+    transform: rotateY(0);
 }

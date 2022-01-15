@@ -1,0 +1,183 @@
+.serviciosPrincipal {
+    background: #FFFFFF;
+}
+
+.serviciosPrincipal .contenedorServicio {
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.serviciosPrincipal .contenedorServicio h3 {
+    text-align: center;
+    margin-bottom: 1.3rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.serviciosPrincipal .contenedorServicio .contenedorTexto .divTexto {
+    margin-bottom: 2rem;
+}
+
+.serviciosPrincipal .contenedorServicio .contenedorTexto .divTexto h6 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.serviciosPrincipal .contenedorServicio .contenedorTexto .divTexto p {
+    font-weight: 300;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.serviciosPrincipal .contenedorServicio .contenedorDisplay .contenedorImg {
+    padding: 1rem;
+}
+
+.serviciosPrincipal .contenedorServicio .contenedorDisplay .contenedorImg img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.serviciosPrincipal .contenedorServicio .contenedorDisplay .divEnlaces {
+    padding: 1rem;
+}
+
+.serviciosPrincipal .contenedorServicio .contenedorDisplay .divEnlaces a {
+    font-size: 1.1rem;
+    padding: .5rem 1.3rem;
+    display: block;
+}
+
+.serviciosPrincipal .contenedorServicio .contenedorDisplay .contenedorImg {
+    height: 530px;
+    padding: 0;
+    position: relative;
+}
+
+.serviciosPrincipal .contenedorServicio .contenedorDisplay .contenedorImg .img1, 
+.serviciosPrincipal .contenedorServicio .contenedorDisplay .contenedorImg .img2 {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    border-radius: 30px 30px 10px 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.21);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.serviciosPrincipal .contenedorServicio .contenedorDisplay .contenedorImg .img1 {
+    left: 3%;
+}
+
+.serviciosPrincipal .contenedorServicio .contenedorDisplay .contenedorImg .img2 {
+    top: 40%;
+    left: -5%;
+}
+
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorTexto p {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas {
+    margin-top: 2rem;
+}
+
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas .etapa {
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 6px 0 rgba(202, 202, 202, 0.5);
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas .etapa:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #03363d;
+}
+
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas .headerEtapa button {
+    padding: 2rem 1rem;
+}
+
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas .headerEtapa button::after {
+    display: none;
+}
+
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas .headerEtapa .accordion-button:not(.collapsed),
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas .headerEtapa .accordion-button:focus,
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas .headerEtapa .accordion-button:hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: initial;
+    z-index: 0;
+}
+
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas .etapa h5 {
+    margin-bottom: 0;
+}
+
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas .etapa .bodyEtapa {
+    padding-top: 0;
+}
+
+.serviciosPrincipal .contenedorServicio.posicionamiento .contenedorEtapas .etapa .bodyEtapa p {
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.serviciosPrincipal .contenedorServicio.callcenter .contenedorTexto p {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.serviciosPrincipal .contenedorServicio.callcenter .contenedorLista {
+    margin-top: 2rem;
+}
+
+.serviciosPrincipal .contenedorServicio.callcenter .contenedorLista .lista {
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 rgba(202, 202, 202, 0.5);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: #f6f6f6;
+}
+
+.serviciosPrincipal .contenedorServicio.callcenter .contenedorLista .lista p {
+    margin-bottom: 0;
+    font-weight: 300;
+    text-align: justify;
+    font-size: .9rem;
+}
+
+.serviciosPrincipal .contenedorServicio.hosting .imgDataCenter {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 2rem;
+    border-radius: 30px 30px 10px 30px;
+    background: url(/public/images/imgDataCenter.jpg) center/cover no-repeat;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.21)
+}
