@@ -4,7 +4,10 @@ import { NavLink } from "react-router-dom";
 import './navbar.css';
 
 function CustomToggle({ eventKey }) {
-  const accordionOnClick = useAccordionButton(eventKey);
+  const accordionOnClick = useAccordionButton(eventKey, () => {
+    const classList = document.querySelector('#menuPrincipal').classList;
+    console.log(classList);
+  });
 
   return (<div onClick={accordionOnClick} className="line"></div>);
 }

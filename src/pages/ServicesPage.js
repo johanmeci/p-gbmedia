@@ -44,7 +44,7 @@ export default function Servicios() {
               <h4>Dividimos nuestro proceso en cinco etapas</h4>
               <Accordion className="contenedorMaster">
                 {contentStages.map(({ id, title, description }) => (
-                  <Accordion.Item eventKey={id} className="etapa">
+                  <Accordion.Item eventKey={id} className="etapa" key={id}>
                     <Accordion.Header className="headerEtapa">
                       <h5>{title}</h5>
                     </Accordion.Header>
