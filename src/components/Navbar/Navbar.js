@@ -3,21 +3,35 @@ import { NavLink } from "react-router-dom";
 
 import './navbar.css';
 
+
 function CustomToggle({ eventKey }) {
   const accordionOnClick = useAccordionButton(eventKey, () => {
-    const classList = document.querySelector('#menuPrincipal').classList;
-    console.log(classList);
+
+    const header = document.querySelector('.header').classList;
+    const menu = document.querySelector('#menuPrincipal').classList;
+  
+    if (!menu.contains('show')) {
+      header.add('headerFijo');
+    } else if (menu.contains('show') && window.scrollY === 0){
+      setTimeout(() => {
+        header.remove('headerFijo');
+      }, 200);
+    }
+
   });
 
   return (<div onClick={accordionOnClick} className="line"></div>);
 }
 
 document.addEventListener('scroll', () => {
-  const header = document.querySelector('.header');
-  if (window.scrollY >= 15) {
-    header.classList.add('headerFijo');
+
+  const header = document.querySelector('.header').classList;
+  const menu = document.querySelector('#menuPrincipal').classList;
+
+  if (window.scrollY >= 15 || menu.contains('show')) {
+    header.add('headerFijo');
   } else {
-    header.classList.remove('headerFijo');
+    header.remove('headerFijo');
   }
 });
 
@@ -32,7 +46,7 @@ export default function Navbar() {
           <Accordion className="contenedorBoton">
             <CustomToggle eventKey="0"></CustomToggle>
             <Accordion.Collapse className="menuPrincipal" id="menuPrincipal" eventKey="0">
-              <ul className="ulMenu">
+              <ul className="ulMenu" id="ulMenu">
                   <li className="">
                     <NavLink to="/">Inicio</NavLink>
                   </li>
