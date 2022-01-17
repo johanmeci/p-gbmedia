@@ -9,7 +9,7 @@ import './hero.css';
 export default function Hero() {
 
   const { pathname } = useLocation();
-  const { title, subtitle, tag } = txtHero.filter(txt => txt.tag === pathname)[0] || {};
+  const { title, subtitle, tag = '' } = txtHero.filter(txt => txt.tag === pathname)[0] || {};
   
   let arrowSection;
   
