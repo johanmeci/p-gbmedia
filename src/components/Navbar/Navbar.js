@@ -23,6 +23,11 @@ function CustomToggle({ eventKey }) {
   return (<div onClick={accordionOnClick} className="line"></div>);
 }
 
+/* const hideMenu = () => {
+  document.querySelector('#menuPrincipal').classList.remove('show');
+  document.querySelector('.header').classList.remove('headerFijo');
+} */
+
 document.addEventListener('scroll', () => {
 
   const header = document.querySelector('.header').classList;
@@ -47,15 +52,15 @@ export default function Navbar() {
             <CustomToggle eventKey="0"></CustomToggle>
             <Accordion.Collapse className="menuPrincipal" id="menuPrincipal" eventKey="0">
               <ul className="ulMenu" id="ulMenu">
-                  <li className="">
-                    <NavLink to="/">Inicio</NavLink>
+                  <li>
+                    <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/">Inicio</NavLink>
                   </li>
-                  <li className="active">
+                  <li>
                     <NavLink to="/services">Servicios</NavLink>
                   </li>
-                  <li className="">
+                  <li>
                     <NavLink to="/about">Nosotros</NavLink></li>
-                  <li className="">
+                  <li>
                     <NavLink to="/contact">Contacto</NavLink>
                   </li>
               </ul>
@@ -66,19 +71,3 @@ export default function Navbar() {
     </header>
   )
 }
-
-/*
-<div>
-    <ul>
-      <li>
-        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/">Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="/about">About</NavLink>
-      </li>
-      <li>
-        <NavLink to="/users">Users</NavLink>
-      </li>
-    </ul>
-</div>
-*/

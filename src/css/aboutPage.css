@@ -1,0 +1,136 @@
+.nosotrosPrincipal {
+    background-color: #FFFFFF;
+}
+
+.nosotrosPrincipal .contenedorNosotros {
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nosotrosPrincipal .contenedorNosotros h3 {
+    text-align: center;
+    margin-bottom: 1.3rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.nosotrosPrincipal .contenedorNosotros p {
+    margin-bottom: 0;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.seccionSecundariaNosotros {
+    background: url(../../public/images/imgSeccion2.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    padding: 2rem;
+    position: relative;
+}
+
+.seccionSecundariaNosotros:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #005076;
+    opacity: 0.7;
+}
+
+.seccionSecundariaNosotros .contenedorSecundario {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.21);
+}
+
+.seccionSecundariaNosotros .contenedorSecundario .contenedorTexto h3 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.seccionSecundariaNosotros .contenedorSecundario .contenedorTexto p {
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.seccionTresNosotros {
+    background-color: #FFFFFF;
+    padding: 2rem;
+}
+
+.seccionTresNosotros .contenedorTercero h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.seccionTresNosotros .contenedorTercero p {
+    margin-bottom: 0;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.seccionTresNosotros .contenedorTercero .imgSeccion3 {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../../public/images/imgSeccion2.jpg) center/cover no-repeat;
+    border-radius: 30px 30px 10px 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.21);
+}
+
+.seccionCuatroNosotros {
+    background-color: #f6f6f6;
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+.seccionCuatroNosotros .contenedorCuartoNosotros .elemento {
+    width: 203px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.seccionCuatroNosotros .contenedorCuartoNosotros .elemento .icon {
+    border-radius: 50%;
+    box-shadow: 0 2px 14px rgba(202, 202, 202, 0.5);
+    width: 130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.seccionCuatroNosotros .contenedorCuartoNosotros .elemento:first-of-type .icon {
+    background: url(../../public/images/iconCalidad.svg) center/80% no-repeat;
+}
+
+.seccionCuatroNosotros .contenedorCuartoNosotros .elemento:nth-of-type(2) .icon {
+    background: url(../../public/images/iconAsesoramiento.svg) center/80% no-repeat;
+}
+
+.seccionCuatroNosotros .contenedorCuartoNosotros .elemento:nth-of-type(3) .icon {
+    background: url(../../public/images/iconInnovacion.svg) center/80% no-repeat;
+}
+
+.seccionCuatroNosotros .contenedorCuartoNosotros .elemento h5 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.seccionCuatroNosotros .contenedorCuartoNosotros .elemento p {
+    margin-bottom: 0;
+    font-weight: 300;
+    text-align: justify;
+    font-size: .95rem;
+}
