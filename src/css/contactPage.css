@@ -1,0 +1,59 @@
+.principalContacto {
+    background-color: #FFFFFF
+}
+
+.principalContacto .contenedorContacto {
+    padding-top: 5rem
+}
+
+.principalContacto .contenedorContacto h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600
+}
+
+.principalContacto .contenedorContacto .contenedorFormulario {
+    margin-top: 2rem
+}
+
+.seccionSecundariaContacto {
+    padding-top: 3rem;
+    background-color: #FFFFFF
+}
+
+.seccionSecundariaContacto h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600
+}
+
+.seccionSecundariaContacto .contenedorSecundario .contenedorMapa iframe {
+    margin-top: 1rem;
+    width: 100%;
+    height: 300px;
+    border: 0
+}
+
+.seccionSecundariaContacto .contenedorSecundario .contenedorMapa .divDatos {
+    padding: 1rem 0;
+    font-weight: 300
+}
+
+.seccionSecundariaContacto .contenedorSecundario .contenedorMapa .divDatos p {
+    margin-bottom: .2rem;
+    color: #808080
+}
+
+.seccionSecundariaContacto .contenedorSecundario .contenedorMapa .divDatos p a {
+    color: #808080;
+    text-decoration: none
+}
+
+.seccionSecundariaContacto .contenedorSecundario .contenedorInfo {
+    margin-top: 1rem
+}
+
+.seccionSecundariaContacto .contenedorSecundario .contenedorInfo p {
+    font-weight: 300;
+    text-align: justify
+}
