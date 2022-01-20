@@ -1,7 +1,7 @@
 import { Accordion, Container, Row } from "react-bootstrap";
 import { itemsAbout } from "../constants/constants";
 
-import '../css/homePage.css';
+import '../scss/homePage.scss';
 
 export default function HomePage() {
   return (

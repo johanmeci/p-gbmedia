@@ -1,5 +1,6 @@
 import { Container, Row } from 'react-bootstrap';
-import '../css/aboutPage.css';
+
+import '../scss/aboutPage.scss';
 
 export default function AboutPage() {
   return (

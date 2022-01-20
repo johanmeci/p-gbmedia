@@ -15,7 +15,7 @@ export default function Footer() {
               <li>Cali - Colombia</li>
             </ul>
             <ul className="footerDatos">
-              <li><span>Ayuda y Soporte</span></li>
+              <li><span>Nuestros Servicios</span></li>
               <li><Link to="/web-services">Servicios Web</Link></li>
               <li><Link to="/hosting">Host & Data Center</Link></li>
             </ul>
@@ -27,7 +27,7 @@ export default function Footer() {
             </ul>
           </Col>
           <Col xs="12" className="footerInferior">
-            <p>Copyright © 2018 GB Media Group. All rights reserved.</p>
+            <p>Copyright © 2018. All rights reserved.</p>
           </Col>
         </Row>
       </Container>

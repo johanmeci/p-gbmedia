@@ -1,7 +1,7 @@
 import { Accordion, Container, Row } from "react-bootstrap";
 import { contentCallCenter, contentServices, contentStages } from "../constants/constants";
 
-import '../css/servicesPage.css';
+import '../scss/servicesPage.scss';
 
 export default function Servicios() {
   return (

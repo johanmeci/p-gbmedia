@@ -37,3 +37,17 @@
     margin-top: 2rem;
     text-align: center;
 }
+
+@media (min-width: 768px) {
+    
+    .footer .divFooter {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer .divFooter .footerDatos{
+        flex: 0 1 165px;
+        text-align: center;
+    }
+
+}
