@@ -1,0 +1,196 @@
+.header {
+    z-index: 90;
+    background-color: transparent;
+    padding: 1.6rem 1rem;
+    transition: background-color .3s ease;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: none;
+
+    &.headerFijo {
+        background-color: #FFFFFF;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13)
+    }
+
+    .logoPrincipal {
+        width: 120px;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .contenedorBoton {
+            cursor: pointer;
+            width: auto;
+            margin-left: auto;
+            z-index: 1;
+            transition: .5s all ease-out;
+
+            .line,
+            .line::after,
+            .line::before {
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 35px;
+                height: 2px;
+                background-color: #005076;
+                transition: all .25s ease-out;
+            }
+
+            .line {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    top: -9px;
+                }
+
+                &::after {
+                    content: '';
+                    bottom: -9px;
+                }
+            }
+        }
+
+        .menuPrincipal {
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+            position: absolute;
+            left: 0;
+            top: 4rem;
+
+            .ulMenu {
+                list-style: none;
+                padding: 1rem;
+                margin-bottom: 0;
+                background-color: white;
+
+                li {
+                    padding: .5rem 0;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    transition: all 0.5s ease-in-out;
+                    position: relative;
+                    overflow: hidden;
+
+                    a {
+                        position: relative;
+                        z-index: 1;
+                        display: block;
+                        text-align: left;
+                        text-decoration: none;
+                        font-variant: small-caps;
+                        color: #005076;
+                        transition: all 0.5s ease-in-out;
+                    }
+
+                    &.containerSubMenu {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+
+                        a:last-of-type {
+                            border: 1px solid #D5D5D5;
+                            padding: 0 .7rem;
+                        }
+
+                        a:last-of-type img {
+                            width: 15px;
+                        }
+
+                        .subMenu1 {
+                            padding-top: .5rem;
+                            flex: 0 0 100%;
+
+                            li {
+                                border-top: 1px solid #D5D5D5;
+
+                                a {
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    
+    .header {
+        padding: 1rem;
+
+        .contenedorBoton {
+
+            .line {
+                display: none;
+            }
+
+            .menuPrincipal {
+                display: block;
+                position: initial;
+
+                .ulMenu {
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    background-color: transparent;
+
+                    li {
+                        margin-right: 1.5rem;
+                        font-size: 1.1rem;
+
+                        &:hover {
+                            a {
+                                &::after,
+                                &::before {
+                                    width: 50%;
+                                }
+                            }
+                        }
+
+                        a {
+                            color: black;
+                            font-weight: 500;
+                            position: relative;
+
+                            &::after,
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                width: 0%;
+                                height: 2px;
+                                background-color: #005076;
+                                transition: width .3s ease;
+                            }
+
+                            &::after {
+                                left: 50%;
+                            }
+
+                            &::before {
+                                right: 50%;
+                            }
+
+                            &.active {
+                                &::after,
+                                &::before {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

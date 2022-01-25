@@ -1,7 +1,7 @@
 import { Accordion, Container, useAccordionButton } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-import './navbar.css';
+import './navbar.scss';
 
 
 function CustomToggle({ eventKey }) {
