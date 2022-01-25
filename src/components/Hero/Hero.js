@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { txtHero } from "../../constants/constants";
 
-import './hero.css';
+import './hero.scss';
 
 export default function Hero() {
 
