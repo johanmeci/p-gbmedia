@@ -85,7 +85,23 @@
 
             .contenedorInfo {
                 padding-left: 1rem;
-                border-left: 1px solid rgb(60, 65, 67);
+                border-left: 1px solid #D5D5D5;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    
+    .seccionSecundariaContacto {
+        .contenedorSecundario {
+            .contenedorInfo {
+                padding-left: 4rem;
+            }
+
+            .contenedorMapa {
+                padding-right: 4rem;
             }
         }
     }
