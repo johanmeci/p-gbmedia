@@ -27,7 +27,7 @@ export default function Footer() {
             </ul>
           </Col>
           <Col xs="12" className="footerInferior">
-            <p>Copyright © 2018. All rights reserved.</p>
+            <p>Website developed during my time working with the company. Use only for personal portfolio.</p>
           </Col>
         </Row>
       </Container>
